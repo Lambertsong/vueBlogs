@@ -1,10 +1,10 @@
 <template>
   <div id="content" class="hello">
     <!--雪花特效-->
-    <let-it-snow
-      v-bind="snowConf"
-      :show="show"
-    ></let-it-snow>
+<!--    <let-it-snow-->
+<!--      v-bind="snowConf"-->
+<!--      :show="show"-->
+<!--    ></let-it-snow>-->
     <!--公示牌-->
     <div class="billboard">
       <div class="billboard_turnoff">
@@ -45,6 +45,9 @@
             </div>
             <div class="list_genre">相册图库</div>
             <div class="list_introduce">相册库的介绍</div>
+            <div class="turn">
+              <button>点击进入</button>
+            </div>
           </div>
           <div class="menu_list">
             <div class="menu_img">
@@ -52,6 +55,9 @@
             </div>
             <div class="list_genre">网站地图</div>
             <div class="list_introduce">站点简易通道</div>
+            <div class="turn">
+              <button>点击进入</button>
+            </div>
           </div>
           <div class="menu_list">
             <div class="menu_img">
@@ -59,6 +65,9 @@
             </div>
             <div class="list_genre">文章归档</div>
             <div class="list_introduce">所有文章的归纳处</div>
+            <div class="turn">
+              <button>点击进入</button>
+            </div>
           </div>
           <div class="menu_list">
             <div class="menu_img">
@@ -66,6 +75,9 @@
             </div>
             <div class="list_genre">视频分享</div>
             <div class="list_introduce">想看什么视频请说</div>
+            <div class="turn">
+              <button>点击进入</button>
+            </div>
           </div>
           <div class="menu_list">
             <div class="menu_img">
@@ -73,6 +85,9 @@
             </div>
             <div class="list_genre">留言互动</div>
             <div class="list_introduce">不要打广告哦</div>
+            <div class="turn">
+              <button>点击进入</button>
+            </div>
           </div>
           <div class="menu_list">
             <div class="menu_img">
@@ -80,6 +95,9 @@
             </div>
             <div class="list_genre">我的邻居</div>
             <div class="list_introduce">我的亲爱的小伙伴</div>
+            <div class="turn">
+              <button>点击进入</button>
+            </div>
           </div>
         </div>
         <div class="content_user">
@@ -320,16 +338,16 @@
     },
     data() {
       return {
-        snowConf: {
-          windPower : 0,
-          speed : 1,
-          count : 20,
-          size : 10,
-          opacity : 1,
-          images: ['http://jstest.czkids.cn/JHZicon/images/xue1.png',
-            'http://jstest.czkids.cn/JHZicon/images/xue2.png',
-            'http://jstest.czkids.cn/JHZicon/images/xue3.png']
-        },
+        // snowConf: {
+        //   windPower : 0,
+        //   speed : 1,
+        //   count : 20,
+        //   size : 10,
+        //   opacity : 1,
+        //   images: ['http://jstest.czkids.cn/JHZicon/images/xue1.png',
+        //     'http://jstest.czkids.cn/JHZicon/images/xue2.png',
+        //     'http://jstest.czkids.cn/JHZicon/images/xue3.png']
+        // },
 
         scroll: '',
         time: '',
@@ -581,7 +599,7 @@
       }
     },
     mounted() {
-      this.show = true
+      // this.show = true
       var that = this;
       window.addEventListener("beforeunload", this.fn);
       window.addEventListener('scroll', this.dataScroll);
@@ -690,6 +708,7 @@
   .content_title{
     background-color: white;
     margin-top: 4px;
+
   }
   .content_text{
     padding: 8px 8px  8px 12px;
@@ -700,11 +719,20 @@
   }
   .menu_list{
     padding: 15px 10px;
+    /*height: 75px;*/
     font-size: 13px;
     width: 16.6%;
     border-right: 1px dashed #aaaa;
+    /*overflow: hidden;*/
+    transition: .5s;/*过渡效果*/
+  }
+  .menu_list:hover{
+    margin-top: -40px;
+    /*color: white;*/
   }
   .content_menu{
+    height: 105px;
+    overflow: hidden;
     background-color: white;
     margin-top: 8px;
     display: flex;
@@ -942,6 +970,19 @@
   }
   .inbox:hover .article_index{
     color: #FF6700;
+  }
+  .turn{
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .turn button{
+    background-color: #FF5E52;
+    color: white;
+    border: none;
+    padding: 5px 10px 7px;
+    border-radius: 3px;
+    font-size: 13px;
   }
 </style>
 <style>

@@ -1,36 +1,46 @@
 <template>
   <div>
     <div class="headerAll">
+      <let-it-snow
+        v-bind="snowConf"
+        :show="show"
+      ></let-it-snow>
       <header class="header">
         <div>
           <img src="../assets/logo.png">
         </div>
         <ul>
           <li>
-            <router-link  to="/homeContent" >
+            <router-link class="li" to="/">
               <div class="header_list">
                 <img src="../assets/home.png" alt="">
               </div>
               <div>首页</div>
             </router-link>
           </li>
-          <li @click="go">
-            <div class="header_list">
-              <img src="../assets/suggestion.png" alt="">
-            </div>
-            <div>个人笔记</div>
-          </li>
-          <li @click="minute">
-            <div class="header_list">
-              <img src="../assets/favoriteslist.png" alt="">
-            </div>
-            <div>小故事</div>
+          <li>
+            <router-link class="li" to="/contentSubregion">
+              <div class="header_list">
+                <img src="../assets/suggestion.png" alt="">
+              </div>
+              <div>个人笔记</div>
+            </router-link>
           </li>
           <li>
-            <div class="header_list">
-              <img src="../assets/voiceprint.png" alt="">
-            </div>
-            <div>更多功能</div>
+            <router-link class="li" to="/template">
+              <div class="header_list">
+                <img src="../assets/favoriteslist.png" alt="">
+              </div>
+              <div>小故事</div>
+            </router-link>
+          </li>
+          <li>
+            <router-link class="li" to="/contentSubregion">
+              <div class="header_list">
+                <img src="../assets/voiceprint.png" alt="">
+              </div>
+              <div>更多功能</div>
+            </router-link>
           </li>
         </ul>
       </header>
@@ -61,6 +71,17 @@
         name: "home",
       data() {
         return {
+            snowConf: {
+                windPower : 0,
+                speed : 1,
+                count : 20,
+                size : 10,
+                opacity : 1,
+                images: ['http://jstest.czkids.cn/JHZicon/images/xue1.png',
+                    'http://jstest.czkids.cn/JHZicon/images/xue2.png',
+                    'http://jstest.czkids.cn/JHZicon/images/xue3.png']
+            },
+            show: false
         };
       },
       components:{
@@ -91,7 +112,8 @@
         }
       },
       mounted() {
-        window.addEventListener('scroll', this.dataScroll);
+          this.show = true;
+          window.addEventListener('scroll', this.dataScroll);
       }
     }
 </script>
@@ -143,12 +165,18 @@
   li{
     width: 25%;
     list-style: none;
+    font-size: 15px;
+    border-right: 1px solid #aaa;
+  }
+  .li{
+    width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-size: 15px;
-    border-right: 1px solid #aaa;
+    text-decoration: none;
+    out-line: none;
+    color: #000000;
   }
   li:nth-child(4){
     border: none;

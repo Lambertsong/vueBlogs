@@ -11,10 +11,10 @@
         <img src="../assets/advertising.jpg" alt="">
       </div>
       <!--内容部分-->
-      <div >
+      <div class="content_vessel">
         <div class="section section_list animated yin" v-for="(item, index) in list" :key="index">
           <div>
-            <img :src="item.img" alt="">
+            <img :src="item.img" alt="" >
           </div>
           <div class="content_list">
             <h2>{{item.title}}</h2>
@@ -85,7 +85,6 @@
                         'http://jstest.czkids.cn/JHZicon/images/xue2.png',
                         'http://jstest.czkids.cn/JHZicon/images/xue3.png']
                 },
-
                 scroll: '',
                 time: '',
                 date: '',
@@ -254,9 +253,34 @@
         mounted() {
             this.show = true;
             var that = this;
+            var vessel = document.getElementsByClassName('content_vessel');
             var sections = document.getElementsByClassName('section');
+            var section_list = $(".section_list");
+            var tallyNumber = Math.ceil((window.innerHeight + + getScrollTop() - vessel[0].offsetTop) / sections[0].offsetHeight);
+            if(sections.length > tallyNumber){
+                for (var i = 0; i<tallyNumber; i++){
+                    section_list.eq(i).addClass("fadeInUp").removeClass("current");
+                }
+            }else {
+                for (var i = 0; i<sections.length; i++){
+                    section_list.eq(i).addClass("fadeInUp").removeClass("current");
+                }
+            }
+            console.log(getScrollTop())
+            console.log((window.innerHeight + getScrollTop() - vessel[0].offsetTop) / sections[0].offsetHeight);
+            console.log(tallyNumber);
             window.addEventListener("beforeunload", this.fn);
             window.addEventListener('scroll', this.dataScroll);
+            //获取滚动条高度
+            function getScrollTop() {
+                var scrollPos;
+                if (window.pageYOffset) {
+                    scrollPos = window.pageYOffset; }
+                else if (document.compatMode && document.compatMode != 'BackCompat')
+                { scrollPos = document.documentElement.scrollTop; }
+                else if (document.body) { scrollPos = document.body.scrollTop; }
+                return scrollPos;
+            }
         }
     }
 </script>

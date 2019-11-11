@@ -1,4 +1,5 @@
 <template>
+  <!--雪花特效-->
   <div id="app">
     <router-view/>
   </div>
@@ -6,10 +7,17 @@
 <script>
 export default {
   name: 'App',
+    data () {
+        return {
+            show: false
+        }
+    },
   methods:{
     go(){
       this.$router.push('/Registered')
     }
+  },
+  mounted() {
   }
 }
 </script>

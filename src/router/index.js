@@ -2,8 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import homeContent from '@/components/homeContent'
 import contentSubregion from '@/components/contentSubregion'
+import template from '@/components/template'
 import Registered from '@/page/Registered'
 import home from '@/page/home'
+import LetItSnow from 'vue-let-it-snow';
+Vue.use(LetItSnow);
 Vue.use(Router);
 export default new Router({
   mode: 'history',
@@ -15,7 +18,7 @@ export default new Router({
       component: home,
       children: [
         {
-          path: '/homeContent',
+          path: '/',
           name: 'homeContent',
           component: homeContent
         },
@@ -23,6 +26,11 @@ export default new Router({
           path: '/contentSubregion',
           name: 'contentSubregion',
           component: contentSubregion
+        },
+        {
+          path: '/template',
+          name: 'template',
+          component: template
         }
       ]
     },
