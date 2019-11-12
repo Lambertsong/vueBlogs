@@ -57,12 +57,12 @@
   </div>
 </template>
 <!--逻辑js-->
+<style src="../css/contentLeft.css" scoped></style>
 <script>
     import { swiper, swiperSlide } from 'vue-awesome-swiper'
     import 'swiper/dist/css/swiper.css';
     import Vue from 'vue'
     import Calendar from 'vue-calendar-component';
-    import '../css/contentLeft.css'
     export default {
         name: 'contentLeft',
         props: {

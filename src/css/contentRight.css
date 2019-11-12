@@ -164,3 +164,350 @@
   padding: 10px;
   font-size: 14px;
 }
+.user_img{
+  padding-top: 70px;
+  background: url("../assets/userBg.jpeg")no-repeat;
+  background-size:100%;
+}
+.user_img img{
+  width: 80px;
+  height: 80px;
+  border-radius: 500%;
+  background-color: white;
+}
+.right_header{
+  background-color: white;
+}
+.user_name{
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.referral{
+  font-size: 12px;
+  padding: 0 0 13px;
+}
+.user_button{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.user_button button{
+  width: 110px;
+  height: 32px;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user_button button:nth-child(1){
+  background-color: #ff5e5c;
+}
+.user_button button:nth-child(2){
+  background-color: #19b5fe;
+}
+.headerIcon{
+  width: 17px!important;
+  height: 17px!important;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 5px!important;
+}
+.user_ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #eeeeee;
+  margin-top: 10px;
+  font-family: "Yu Gothic UI Semibold";
+}
+.user_li{
+  padding: 10px;
+  font-size: 14px;
+}
+.wh_content_all[data-v-2ebcbc83]{
+  background-color: white!important;
+}
+.wh_content_item[data-v-2ebcbc83]{
+  color: #000!important;
+}
+.wh_top_changge li[data-v-2ebcbc83]{
+  color: white!important;
+  font-size: 14px;
+}
+.wh_jiantou2[data-v-2ebcbc83] {
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+}
+.wh_jiantou1[data-v-2ebcbc83] {
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  transform: rotate(-45deg);
+}
+.wh_content_item .wh_isToday[data-v-2ebcbc83]{
+  background-color: #19b5fe!important;
+  color: white;
+}
+.right_calendar{
+  margin-top: 8px;
+}
+.calendar_header{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.calendar_header img{
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+}
+.calendar_header span{
+  font-size: 15px;
+}
+.wh_top_changge[data-v-2ebcbc83]{
+  background: linear-gradient(90deg, rgba(229,80,138,0.5) 0%, rgba(5,209,211,0.5) 100%);
+}
+.wh_top_changge li[data-v-2ebcbc83]{
+  height: 35px;
+}
+.wh_content_item .wh_chose_day[data-v-2ebcbc83] {
+  background-color: #19b5fe!important;
+  color: white;
+  border-radius: 100px;
+}
+@media screen and (min-width: 460px){
+  .wh_item_date[data-v-2ebcbc83]:hover {
+    background: #8DDFFE;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+/*时钟*/
+.time{
+  background-color: white;
+  border-top: 1px dashed #aaa;
+}
+p{
+  margin: 0;
+  padding: 8px;
+}
+/*标签*/
+.right_tally{
+  margin-top: 8px;
+  background-color: white;
+}
+.tally_ul{
+  padding: 13px 13px 20px 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 1px solid #eeeeee;
+}
+.tally_li{
+  width: 23%;
+  height: 28px;
+  margin-top: 5px;
+  background-color: #eeeeee;
+  font-size: 12px;
+  line-height: 28px;
+}
+.tally_li:nth-child(2n+1){
+  color: greenyellow;
+}
+.tally_li:nth-child(3n+1){
+  color: cornflowerblue;
+}
+.tally_li:nth-child(4n+1){
+  color: burlywood;
+}
+.tally_li:nth-child(5n+1){
+  color: aqua;
+}
+.tally_li:nth-child(11n+1){
+  color: darkcyan;
+}
+.tally_li{
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.tally_li:hover{
+  transform: scale(1.1);
+  background-color: #aaa;
+  border-radius: 5px;
+}
+
+.right_new{
+  background-color: white;
+  margin-top: 8px;
+}
+.new_li{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  /*justify-content: space-between;*/
+  padding: 10px;
+}
+.li_img img{
+  width: 70px;
+  height: 70px;
+}
+.new_ul{
+
+}
+.li_str{
+  display: flex;
+  align-items: center;
+  text-align: left!important;
+}
+.li_content{
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.li_str{
+  /*margin-top: 20px;*/
+}
+.li_title{
+  margin-bottom: 25px;
+  margin-left: 5px;
+}
+.page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+.page_quantity{
+  width: 35px;
+  height: 25px;
+  line-height: 25px;
+  background-color: #FF5E52;
+  color: white;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.page_all{
+  margin-left: 15px;
+}
+.next{
+  width:60px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 2px;
+  margin-left: 10px;
+  color: #666;
+  border: 1px solid #eeeeee;;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.menu_img img{
+  width: 25px;
+}
+.user_list img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px #777
+}
+.video_list img{
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.video_list:hover img{
+  transform: scale(1.4);
+}
+.video_list:hover .hint_list{
+  background-color: rgba(255,0,0,.6);
+}
+.section{
+  background-color: white;
+  margin-top: 10px;
+  display: flex;
+  padding: 10px;
+}
+.section img{
+  width: 200px;
+  height: 150px;
+}
+.yin{
+  opacity:0;
+}
+.content_list{
+  text-align: left;
+  margin-left: 10px;
+  position: relative;
+}
+.content_list h2{
+  font-size: 17px;
+}
+.list_text{
+  font-size: 14px;
+}
+.list_style{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+.list_user{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  margin-right: 10px;
+}
+.list_user img{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.list_user span{
+  font-size: 12px;
+}
+.content_announcement{
+  display: flex;
+  background-color: white;
+  margin-top: 8px;
+  padding: 15px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
+.resources{
+  margin-left: 10px;
+  font-weight: 900;
+}
+.content_advertising{
+  width: 100%;
+}
+.content_advertising img{
+  width: 100%;
+  margin-top: 8px;
+}
+.article_list:nth-child(1) .indexes{
+  background-color: #E71555;
+}
+.article_list:nth-child(2) .indexes{
+  background-color: #16D083;
+}
+.article_list:nth-child(3) .indexes{
+  background-color: #FF6700;
+}
+.inbox:hover .article_index{
+  color: #FF6700;
+}
+

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import homeContent from '@/components/homeContent'
+import prefecture from '@/components/prefecture'
 import contentSubregion from '@/components/contentSubregion'
 import template from '@/components/template'
 import Registered from '@/page/Registered'
@@ -31,6 +32,11 @@ export default new Router({
           path: '/template',
           name: 'template',
           component: template
+        },
+        {
+          path: '/prefecture',
+          name: 'prefecture',
+          component: prefecture
         }
       ]
     },

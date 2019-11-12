@@ -35,7 +35,7 @@
             </router-link>
           </li>
           <li>
-            <router-link class="li" to="/contentSubregion">
+            <router-link class="li" to="/prefecture">
               <div class="header_list">
                 <img src="../assets/voiceprint.png" alt="">
               </div>
@@ -125,6 +125,7 @@
     position: fixed;
     top: 0;
     z-index: 666;
+    border-bottom: 1px solid #eeeeee;
   }
   header{
     height: 50px;
@@ -206,5 +207,69 @@
   }
   .footer_img img{
     width: 50px;
+  }
+ /*日历*/
+  .wh_content_all[data-v-2ebcbc83]{
+    background-color: white!important;
+  }
+  .wh_content_item[data-v-2ebcbc83]{
+    color: #000!important;
+  }
+  .wh_top_changge li[data-v-2ebcbc83]{
+    color: white!important;
+    font-size: 14px;
+  }
+  .wh_jiantou2[data-v-2ebcbc83] {
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+  }
+  .wh_jiantou1[data-v-2ebcbc83] {
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transform: rotate(-45deg);
+  }
+  .wh_content_item .wh_isToday[data-v-2ebcbc83]{
+    background-color: #19b5fe!important;
+    color: white;
+  }
+  .right_calendar{
+    margin-top: 8px;
+  }
+  .calendar_header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+  .calendar_header img{
+    width: 13px;
+    height: 13px;
+    margin-right: 7px;
+  }
+  .calendar_header span{
+    font-size: 15px;
+  }
+  .wh_top_changge[data-v-2ebcbc83]{
+    background: linear-gradient(90deg, rgba(229,80,138,0.5) 0%, rgba(5,209,211,0.5) 100%);
+  }
+  .wh_top_changge li[data-v-2ebcbc83]{
+    height: 35px;
+  }
+  .wh_content_item .wh_chose_day[data-v-2ebcbc83] {
+    background-color: #19b5fe!important;
+    color: white;
+    border-radius: 100px;
+  }
+  @media screen and (min-width: 460px){
+    .wh_item_date[data-v-2ebcbc83]:hover {
+      background: #8DDFFE;
+      border-radius: 50%;
+      cursor: pointer;
+    }
   }
 </style>

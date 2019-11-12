@@ -985,7 +985,7 @@
     font-size: 13px;
   }
 </style>
-<style>
+<style scoped>
   .user_img{
     padding-top: 70px;
     background: url("../assets/userBg.jpeg")no-repeat;
@@ -1051,35 +1051,7 @@
     font-size: 14px;
   }
 </style>
-<style>
-  .wh_content_all[data-v-2ebcbc83]{
-    background-color: white!important;
-  }
-  .wh_content_item[data-v-2ebcbc83]{
-    color: #000!important;
-  }
-  .wh_top_changge li[data-v-2ebcbc83]{
-    color: white!important;
-    font-size: 14px;
-  }
-  .wh_jiantou2[data-v-2ebcbc83] {
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
-    transform: rotate(45deg);
-  }
-  .wh_jiantou1[data-v-2ebcbc83] {
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    transform: rotate(-45deg);
-  }
-  .wh_content_item .wh_isToday[data-v-2ebcbc83]{
-    background-color: #19b5fe!important;
-    color: white;
-  }
+<style scoped>
   .right_calendar{
     margin-top: 8px;
   }
@@ -1169,7 +1141,7 @@
     border-radius: 5px;
   }
 </style>
-<style>
+<style scoped>
   .right_new{
     background-color: white;
     margin-top: 8px;

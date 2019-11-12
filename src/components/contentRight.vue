@@ -71,11 +71,11 @@
     </div>
   </div>
 </template>
+<style src="../css/contentRight.css" scoped></style>
 <script>
     import contentRight from '../components/contentRight';
     import { swiper, swiperSlide } from 'vue-awesome-swiper'
     import 'swiper/dist/css/swiper.css';
-    import '../css/contentRight.css'
     import Vue from 'vue'
     import Calendar from 'vue-calendar-component';
     export default {
