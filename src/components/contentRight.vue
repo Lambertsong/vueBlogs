@@ -3,7 +3,7 @@
     <div class="content_right">
       <div class="right_calendar">
         <div class="calendar_header">
-          <img src="../assets/calendar.png" alt="">
+          <img src="../assets/img/calendar.png" alt="">
           <span>日历和时间</span>
         </div>
         <Calendar
@@ -20,7 +20,7 @@
       <!--标签-->
       <div class="right_tally">
         <div class="calendar_header">
-          <img src="../assets/tally.png" alt="">
+          <img src="../assets/img/tally.png" alt="">
           <span>标签</span>
         </div>
         <div class="tally_ul">
@@ -30,7 +30,7 @@
       <!--热门文章-->
       <div class="right_article">
         <div class="calendar_header" style="border-bottom: 1px solid #eee">
-          <img src="../assets/give.png" alt="">
+          <img src="../assets/img/give.png" alt="">
           <span>热门文章</span>
         </div>
         <div>
@@ -43,7 +43,7 @@
       <!--最新文章-->
       <div class="right_new">
         <div class="calendar_header" style="border-bottom: 1px solid #eee">
-          <img src="../assets/suggestion.png" alt="">
+          <img src="../assets/img/suggestion.png" alt="">
           <span>最新文章</span>
         </div>
         <div class="new_ul">
@@ -55,11 +55,11 @@
               <div class="li_title">{{item.title}}</div>
               <div class="li_str">
                 <div class="list_user">
-                  <img src="../assets/history.png" alt="">
+                  <img src="../assets/img/history.png" alt="">
                   <span>{{item.time}}</span>
                 </div>
                 <div class="list_user">
-                  <img src="../assets/eye_protection.png" alt="">
+                  <img src="../assets/img/eye_protection.png" alt="">
                   <span>{{item.discuss}}</span>
                 </div>
               </div>
@@ -106,9 +106,9 @@
                 date: '',
                 list: [{
                     title: "如何保存浏览器内容js密码",
-                    img: require('../assets/git1.gif'),
+                    img: require('../assets/img/git1.gif'),
                     content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -116,9 +116,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "如何保存浏览器内容js密码",
-                    img: require('../assets/git2.jpg'),
+                    img: require('../assets/img/git2.jpg'),
                     content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -126,9 +126,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "如何保存浏览器内容js密码",
-                    img: require('../assets/git4.jpg'),
+                    img: require('../assets/img/git4.jpg'),
                     content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -136,9 +136,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "如何保存浏览器内容js密码",
-                    img: require('../assets/git3.gif'),
+                    img: require('../assets/img/git3.gif'),
                     content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -146,9 +146,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "如何保存浏览器内容js密码",
-                    img: require('../assets/git3.gif'),
+                    img: require('../assets/img/git3.gif'),
                     content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -156,9 +156,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "如何保存浏览器内容js密码",
-                    img: require('../assets/git3.gif'),
+                    img: require('../assets/img/git3.gif'),
                     content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,

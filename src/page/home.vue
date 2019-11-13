@@ -7,13 +7,13 @@
       ></let-it-snow>
       <header class="header">
         <div>
-          <img src="../assets/logo.png">
+          <img src="../assets/img/logo.png">
         </div>
         <ul>
           <li>
             <router-link class="li" to="/">
               <div class="header_list">
-                <img src="../assets/home.png" alt="">
+                <img src="../assets/img/home.png" alt="">
               </div>
               <div>首页</div>
             </router-link>
@@ -21,7 +21,7 @@
           <li>
             <router-link class="li" to="/contentSubregion">
               <div class="header_list">
-                <img src="../assets/suggestion.png" alt="">
+                <img src="../assets/img/suggestion.png" alt="">
               </div>
               <div>个人笔记</div>
             </router-link>
@@ -29,7 +29,7 @@
           <li>
             <router-link class="li" to="/template">
               <div class="header_list">
-                <img src="../assets/favoriteslist.png" alt="">
+                <img src="../assets/img/favoriteslist.png" alt="">
               </div>
               <div>小故事</div>
             </router-link>
@@ -37,7 +37,7 @@
           <li>
             <router-link class="li" to="/prefecture">
               <div class="header_list">
-                <img src="../assets/voiceprint.png" alt="">
+                <img src="../assets/img/voiceprint.png" alt="">
               </div>
               <div>更多功能</div>
             </router-link>
@@ -49,12 +49,12 @@
     <!--尾部-->
     <div class="footer">
       <div class="footer_img">
-        <img src="../assets/005Kin8igy1fxmmsr924rg302r031t8n.gif" alt="">
+        <img src="../assets/img/005Kin8igy1fxmmsr924rg302r031t8n.gif" alt="">
       </div>
       <div>友情提示：本博客所有资源，均来自网络，如有侵权，请联系删除</div>
-      <div>Copyright©2019羊羊博客 <img src="../assets/005Kin8igy1fwgqbuez9gj300i00j3y9.jpg" alt="">豫ICP备18020296号</div>
+      <div>Copyright©2019羊羊博客 <img src="../assets/img/005Kin8igy1fwgqbuez9gj300i00j3y9.jpg" alt="">豫ICP备18020296号</div>
       <div>
-        <img src="../assets/005Kin8igy1fx545g9zong305c00rwed.gif" alt="">
+        <img src="../assets/img/005Kin8igy1fx545g9zong305c00rwed.gif" alt="">
       </div>
       <div>
         <span  style="background-color: #5d99cd;margin-right: 5px;padding: 3px;color: white">Powered by Emlog</span>

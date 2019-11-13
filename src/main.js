@@ -12,14 +12,14 @@ import animated from 'animate.css'
 // Vue.use(LetItSnow);
 Vue.use(animated);
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
-var url="http://localhost:8081";
-axios.get(url+'/product')
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+// var url="http://localhost:8081";
+// axios.get(url+'/product')
+//   .then(function (response) {
+//     console.log(response);
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   });
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */

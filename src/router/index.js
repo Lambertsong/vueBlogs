@@ -10,8 +10,8 @@ import LetItSnow from 'vue-let-it-snow';
 Vue.use(LetItSnow);
 Vue.use(Router);
 export default new Router({
-  mode: 'history',
-  base: '/',
+  // mode: 'history',
+  // base: '/',
   routes: [
     {
       path: '/',

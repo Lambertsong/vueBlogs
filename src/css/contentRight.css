@@ -102,7 +102,7 @@
 }
 .user_img{
   padding-top: 70px;
-  background: url("../assets/userBg.jpeg")no-repeat;
+  background: url("../assets/img/userBg.jpeg")no-repeat;
   background-size:100%;
 }
 .user_img img{
@@ -166,7 +166,7 @@
 }
 .user_img{
   padding-top: 70px;
-  background: url("../assets/userBg.jpeg")no-repeat;
+  background: url("../assets/img/userBg.jpeg")no-repeat;
   background-size:100%;
 }
 .user_img img{

@@ -8,7 +8,7 @@
     <!--公示牌-->
     <div class="billboard">
       <div class="billboard_turnoff">
-        <img src="../assets/turnoff1.jpg" alt="">
+        <img src="../assets/img/turnoff1.jpg" alt="">
       </div>
       <div class="billboard_content">
         <div class="plate">2019年，祝大家“诸”事吉祥</div>
@@ -20,13 +20,13 @@
         <div class="swiper">
           <swiper :options="swiperOption">
             <swiper-slide>
-              <img style="height: 200px" src="../assets/itme1.jpg"/>
+              <img style="height: 200px" src="../assets/img/itme1.jpg"/>
             </swiper-slide>
             <swiper-slide>
-              <img style="height: 200px" src="../assets/itme2.jpg"/>
+              <img style="height: 200px" src="../assets/img/itme2.jpg"/>
             </swiper-slide>
             <swiper-slide>
-              <img style="height: 200px" src="../assets/itme4.jpg"/>
+              <img style="height: 200px" src="../assets/img/itme4.jpg"/>
             </swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
           </swiper>
@@ -41,7 +41,7 @@
         <div class="content_menu">
           <div class="menu_list">
             <div class="menu_img">
-              <img src="../assets/faimlyalbum.png" alt="">
+              <img src="../assets/img/faimlyalbum.png" alt="">
             </div>
             <div class="list_genre">相册图库</div>
             <div class="list_introduce">相册库的介绍</div>
@@ -51,7 +51,7 @@
           </div>
           <div class="menu_list">
             <div class="menu_img">
-              <img src="../assets/address.png" alt="">
+              <img src="../assets/img/address.png" alt="">
             </div>
             <div class="list_genre">网站地图</div>
             <div class="list_introduce">站点简易通道</div>
@@ -61,7 +61,7 @@
           </div>
           <div class="menu_list">
             <div class="menu_img">
-              <img src="../assets/suggestion.png" alt="">
+              <img src="../assets/img/suggestion.png" alt="">
             </div>
             <div class="list_genre">文章归档</div>
             <div class="list_introduce">所有文章的归纳处</div>
@@ -71,7 +71,7 @@
           </div>
           <div class="menu_list">
             <div class="menu_img">
-              <img src="../assets/favoriteslist.png" alt="">
+              <img src="../assets/img/favoriteslist.png" alt="">
             </div>
             <div class="list_genre">视频分享</div>
             <div class="list_introduce">想看什么视频请说</div>
@@ -81,7 +81,7 @@
           </div>
           <div class="menu_list">
             <div class="menu_img">
-              <img src="../assets/schedule.png" alt="">
+              <img src="../assets/img/schedule.png" alt="">
             </div>
             <div class="list_genre">留言互动</div>
             <div class="list_introduce">不要打广告哦</div>
@@ -91,7 +91,7 @@
           </div>
           <div class="menu_list">
             <div class="menu_img">
-              <img src="../assets/addresslist.png" alt="">
+              <img src="../assets/img/addresslist.png" alt="">
             </div>
             <div class="list_genre">我的邻居</div>
             <div class="list_introduce">我的亲爱的小伙伴</div>
@@ -107,27 +107,27 @@
           </div>
           <div class="user_photo">
             <div class="user_list">
-              <img src="../assets/indexBg.jpg" alt="">
-              <img class="vip" src="../assets/icn.png" alt="">
+              <img src="../assets/img/indexBg.jpg" alt="">
+              <img class="vip" src="../assets/img/icn.png" alt="">
             </div>
             <div class="user_list">
-              <img src="../assets/logo.png" alt="">
-              <img class="vip" src="../assets/icn.png" alt="">
+              <img src="../assets/img/logo.png" alt="">
+              <img class="vip" src="../assets/img/icn.png" alt="">
             </div>
             <div class="user_list">
-              <img src="../assets/2.png" alt="">
-              <img class="vip" src="../assets/icn.png" alt="">
+              <img src="../assets/img/2.png" alt="">
+              <img class="vip" src="../assets/img/icn.png" alt="">
             </div>
             <div class="user_list">
-              <img src="../assets/4.png" alt="">
-              <!--<img class="vip" src="../assets/icn.png" alt="">-->
+              <img src="../assets/img/4.png" alt="">
+              <!--<img class="vip" src="../assets/img/icn.png" alt="">-->
             </div>
           </div>
         </div>
         <div class="content_video">
           <!--单独图片大小-->
           <div class="video">
-            <img src="../assets/video1.jpg" alt="">
+            <img src="../assets/img/video1.jpg" alt="">
             <div class="hint">
               <div>视频播放的地方，经我正版授权</div>
             </div>
@@ -135,25 +135,25 @@
           <!--多个图片列表-->
           <div class="video_ul">
             <div class="video_list">
-              <img src="../assets/git1.gif" alt="">
+              <img src="../assets/img/git1.gif" alt="">
               <div class="hint_list">
                 <div>最好看的动漫</div>
               </div>
             </div>
             <div class="video_list">
-              <img src="../assets/git2.jpg" alt="">
+              <img src="../assets/img/git2.jpg" alt="">
               <div class="hint_list">
                 <div>高级学习地址</div>
               </div>
             </div>
             <div class="video_list">
-              <img src="../assets/git3.gif" alt="">
+              <img src="../assets/img/git3.gif" alt="">
               <div class="hint_list">
                 <div>学习聚集地</div>
               </div>
             </div>
             <div class="video_list">
-              <img src="../assets/git4.jpg" alt="">
+              <img src="../assets/img/git4.jpg" alt="">
               <div class="hint_list">
                 <div>学习环境的配置，但是属于测试阶段</div>
               </div>
@@ -167,7 +167,7 @@
         </div>
         <!--广告图片-->
         <div class="content_advertising">
-          <img src="../assets/advertising.jpg" alt="">
+          <img src="../assets/img/advertising.jpg" alt="">
         </div>
         <!--内容部分-->
         <div>
@@ -182,23 +182,23 @@
               </div>
               <div class="list_style">
                 <div class="list_user">
-                  <img src="../assets/indexBg.jpg" alt="">
+                  <img src="../assets/img/indexBg.jpg" alt="">
                   <span>{{item.user}}</span>
                 </div>
                 <div class="list_user">
-                  <img src="../assets/favoriteslist.png" alt="">
+                  <img src="../assets/img/favoriteslist.png" alt="">
                   <span>{{item.style}}</span>
                 </div>
                 <div class="list_user">
-                  <img src="../assets/history.png" alt="">
+                  <img src="../assets/img/history.png" alt="">
                   <span>{{item.time}}</span>
                 </div>
                 <div class="list_user">
-                  <img src="../assets/respond.png" alt="">
+                  <img src="../assets/img/respond.png" alt="">
                   <span>16</span>
                 </div>
                 <div class="list_user">
-                  <img src="../assets/eye_protection.png" alt="">
+                  <img src="../assets/img/eye_protection.png" alt="">
                   <span>{{item.discuss}}</span>
                 </div>
               </div>
@@ -217,13 +217,13 @@
       <div class="content_right">
         <div class="right_header">
           <div class="user_img">
-            <img src="../assets/mi.jpg" alt="">
+            <img src="../assets/img/mi.jpg" alt="">
           </div>
           <div class="user_name">君落云霞、、</div>
           <div class="referral">资讯快报、学习交流、新闻趣事！六十二博客..</div>
           <div class="user_button">
-            <button><img class="headerIcon" src="../assets/social.png" alt="">骚扰一下</button>
-            <button><img class="headerIcon" src="../assets/github.png" alt=""> 关注github</button>
+            <button><img class="headerIcon" src="../assets/img/social.png" alt="">骚扰一下</button>
+            <button><img class="headerIcon" src="../assets/img/github.png" alt=""> 关注github</button>
           </div>
           <div class="user_ul">
             <div class="user_li">
@@ -242,7 +242,7 @@
         </div>
         <div class="right_calendar">
           <div class="calendar_header">
-            <img src="../assets/calendar.png" alt="">
+            <img src="../assets/img/calendar.png" alt="">
             <span>日历和时间</span>
           </div>
           <Calendar
@@ -259,7 +259,7 @@
         <!--标签-->
         <div class="right_tally">
           <div class="calendar_header">
-            <img src="../assets/tally.png" alt="">
+            <img src="../assets/img/tally.png" alt="">
             <span>标签</span>
           </div>
           <div class="tally_ul">
@@ -269,7 +269,7 @@
         <!--热门文章-->
         <div class="right_article">
           <div class="calendar_header" style="border-bottom: 1px solid #eee">
-            <img src="../assets/give.png" alt="">
+            <img src="../assets/img/give.png" alt="">
             <span>热门文章</span>
           </div>
           <div>
@@ -282,7 +282,7 @@
         <!--最新文章-->
         <div class="right_new">
           <div class="calendar_header" style="border-bottom: 1px solid #eee">
-            <img src="../assets/suggestion.png" alt="">
+            <img src="../assets/img/suggestion.png" alt="">
             <span>最新文章</span>
           </div>
           <div class="new_ul">
@@ -294,11 +294,11 @@
                 <div class="li_title">{{item.title}}</div>
                 <div class="li_str">
                   <div class="list_user">
-                    <img src="../assets/history.png" alt="">
+                    <img src="../assets/img/history.png" alt="">
                     <span>{{item.time}}</span>
                   </div>
                   <div class="list_user">
-                    <img src="../assets/eye_protection.png" alt="">
+                    <img src="../assets/img/eye_protection.png" alt="">
                     <span>{{item.discuss}}</span>
                   </div>
                 </div>
@@ -380,9 +380,9 @@
         },
         list: [{
           title: "如何保存浏览器内容js密码",
-          img: require('../assets/git1.gif'),
+          img: require('../assets/img/git1.gif'),
           content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-          userImg: "../assets/indexBg.jpg",
+          userImg: "../assets/img/indexBg.jpg",
           time: "2019-06-12",
           style: "专业破解版",
           check: 1,
@@ -390,9 +390,9 @@
           user: "一枝梨花压海棠"
         },{
           title: "如何保存浏览器内容js密码",
-          img: require('../assets/git2.jpg'),
+          img: require('../assets/img/git2.jpg'),
           content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-          userImg: "../assets/indexBg.jpg",
+          userImg: "../assets/img/indexBg.jpg",
           time: "2019-06-12",
           style: "专业破解版",
           check: 1,
@@ -400,9 +400,9 @@
           user: "一枝梨花压海棠"
         },{
           title: "如何保存浏览器内容js密码",
-          img: require('../assets/git4.jpg'),
+          img: require('../assets/img/git4.jpg'),
           content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-          userImg: "../assets/indexBg.jpg",
+          userImg: "../assets/img/indexBg.jpg",
           time: "2019-06-12",
           style: "专业破解版",
           check: 1,
@@ -410,9 +410,9 @@
           user: "一枝梨花压海棠"
         },{
           title: "如何保存浏览器内容js密码",
-          img: require('../assets/git3.gif'),
+          img: require('../assets/img/git3.gif'),
           content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-          userImg: "../assets/indexBg.jpg",
+          userImg: "../assets/img/indexBg.jpg",
           time: "2019-06-12",
           style: "专业破解版",
           check: 1,
@@ -420,9 +420,9 @@
           user: "一枝梨花压海棠"
         },{
           title: "如何保存浏览器内容js密码",
-          img: require('../assets/git3.gif'),
+          img: require('../assets/img/git3.gif'),
           content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-          userImg: "../assets/indexBg.jpg",
+          userImg: "../assets/img/indexBg.jpg",
           time: "2019-06-12",
           style: "专业破解版",
           check: 1,
@@ -430,9 +430,9 @@
           user: "一枝梨花压海棠"
         },{
           title: "如何保存浏览器内容js密码",
-          img: require('../assets/git3.gif'),
+          img: require('../assets/img/git3.gif'),
           content: "实打实大师的大声大声道大声大声道娃娃衫的撒大声地是打算沙发斯蒂芬湿哒哒撒大声地大大",
-          userImg: "../assets/indexBg.jpg",
+          userImg: "../assets/img/indexBg.jpg",
           time: "2019-06-12",
           style: "专业破解版",
           check: 1,
@@ -645,7 +645,7 @@
   .billboard_content{
     width: 250px;
     height: 300px;
-    background-image: url("../assets/billboard2.png");
+    background-image: url("../assets/img/billboard2.png");
     background-size: 100% 100%;
     position: fixed;
     top: 50px;
@@ -988,7 +988,7 @@
 <style scoped>
   .user_img{
     padding-top: 70px;
-    background: url("../assets/userBg.jpeg")no-repeat;
+    background: url("../assets/img/userBg.jpeg")no-repeat;
     background-size:100%;
   }
   .user_img img{

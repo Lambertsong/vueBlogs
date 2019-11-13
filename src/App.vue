@@ -25,7 +25,7 @@ export default {
   body{
     margin: 0;
     padding: 0;
-    background: url("./assets/indexBg.jpg") no-repeat center fixed;
+    background: url("./assets/img/indexBg.jpg") no-repeat center fixed;
     background-size: cover;
   }
   #app {

@@ -50,9 +50,9 @@
             return {
                 list: [{
                     title: "QQ微信红包猎手",
-                    img: require('../assets/005BYqpgly1fz8a8ivqlpj30xx0u0k5r.jpg'),
+                    img: require('../assets/img/005BYqpgly1fz8a8ivqlpj30xx0u0k5r.jpg'),
                     content: "适用于企业站、淘宝客和各种展示类型站点",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -60,9 +60,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "电脑游戏优化大师-AiBooster",
-                    img: require('../assets/lazyload.gif'),
+                    img: require('../assets/img/lazyload.gif'),
                     content: "适用于企业站、淘宝客和各种展示类型站点",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -70,9 +70,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "安卓一个强大备受好评的资源文件管理器",
-                    img: require('../assets/005Kin8igy1fz5ue286fqj30pe0kwjsu.jpg'),
+                    img: require('../assets/img/005Kin8igy1fz5ue286fqj30pe0kwjsu.jpg'),
                     content: "适用于企业站、淘宝客和各种展示类型站点",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -80,9 +80,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "完全免费工具箱万彩办公大师OfficeBox",
-                    img: require('../assets/lazyload.gif'),
+                    img: require('../assets/img/lazyload.gif'),
                     content: "适用于企业站、淘宝客和各种展示类型站点",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -90,9 +90,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "打游戏必备的电脑内存优化工具",
-                    img: require('../assets/lazyload.gif'),
+                    img: require('../assets/img/lazyload.gif'),
                     content: "适用于企业站、淘宝客和各种展示类型站点",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -100,9 +100,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "必用，给博客添加代码高亮",
-                    img: require('../assets/005Kin8igy1fyl9akx7m1j30kd053t8w.jpg'),
+                    img: require('../assets/img/005Kin8igy1fyl9akx7m1j30kd053t8w.jpg'),
                     content: "适用于企业站、淘宝客和各种展示类型站点",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -110,9 +110,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "草根吧源码共享_逆天资源草根吧网站整站源码分享caogen8.co",
-                    img: require('../assets/005Kin8igy1fybru09bc4j30p50eswf7.jpg'),
+                    img: require('../assets/img/005Kin8igy1fybru09bc4j30p50eswf7.jpg'),
                     content: "适用于企业站、淘宝客和各种展示类型站点",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -120,9 +120,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "动态的电脑桌面壁纸软件Wallpaper Engine与UPUPOO哪个好",
-                    img: require('../assets/98301542213952.jpg'),
+                    img: require('../assets/img/98301542213952.jpg'),
                     content: "动态的电脑桌面壁纸软件Wallpaper Engine与UPUPOO哪个好",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -130,9 +130,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "emlog仿站专用工具",
-                    img: require('../assets/005Kin8igy1fxfs9mgav1j30k70f4aao.jpg'),
+                    img: require('../assets/img/005Kin8igy1fxfs9mgav1j30k70f4aao.jpg'),
                     content: "适用于企业站、淘宝客和各种展示类型站点",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -140,9 +140,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "利用 Chrome 浏览器的开发者工具截取整个页面",
-                    img: require('../assets/5.jpg'),
+                    img: require('../assets/img/5.jpg'),
                     content: "适用于企业站、淘宝客和各种展示类型站点",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -150,9 +150,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "emlog修改每天都修改背景图--必应图库",
-                    img: require('../assets/lazyload.gif'),
+                    img: require('../assets/img/lazyload.gif'),
                     content: "适用于企业站、淘宝客和各种展示类型站点",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
@@ -160,9 +160,9 @@
                     user: "一枝梨花压海棠"
                 },{
                     title: "纪念金庸辞世全集48M书籍",
-                    img: require('../assets/005Kin8igy1fwtg3ex3atj30fv0lytak.jpg'),
+                    img: require('../assets/img/005Kin8igy1fwtg3ex3atj30fv0lytak.jpg'),
                     content: "适用于企业站、淘宝客和各种展示类型站点",
-                    userImg: "../assets/indexBg.jpg",
+                    userImg: "../assets/img/indexBg.jpg",
                     time: "2019-06-12",
                     style: "专业破解版",
                     check: 1,
