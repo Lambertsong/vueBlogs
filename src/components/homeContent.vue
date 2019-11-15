@@ -38,7 +38,7 @@
             </div>
           </div>
         </div>
-        <div  data-aos="fade-up"class="content_menu">
+        <div data-aos="fade-up" class="content_menu">
           <div class="menu_list">
             <div class="menu_img">
               <img src="../assets/img/faimlyalbum.png" alt="">
