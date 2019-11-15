@@ -98,3 +98,33 @@ img {
 .inbox:hover .article_index{
   color: #FF6700;
 }
+.page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+.page_quantity{
+  width: 35px;
+  height: 25px;
+  line-height: 25px;
+  background-color: #FF5E52;
+  color: white;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.page_all{
+  margin-left: 15px;
+}
+.next{
+  width:60px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 2px;
+  margin-left: 10px;
+  color: #666;
+  border: 1px solid #eeeeee;;
+}

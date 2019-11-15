@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="content_right">
-      <div class="right_calendar">
+      <div data-aos="fade-up" class="right_calendar">
         <div class="calendar_header">
           <img src="../assets/img/calendar.png" alt="">
           <span>日历和时间</span>
@@ -18,7 +18,7 @@
         </div>
       </div>
       <!--标签-->
-      <div class="right_tally">
+      <div data-aos="fade-up" class="right_tally">
         <div class="calendar_header">
           <img src="../assets/img/tally.png" alt="">
           <span>标签</span>
@@ -28,7 +28,7 @@
         </div>
       </div>
       <!--热门文章-->
-      <div class="right_article">
+      <div data-aos="fade-up" class="right_article">
         <div class="calendar_header" style="border-bottom: 1px solid #eee">
           <img src="../assets/img/give.png" alt="">
           <span>热门文章</span>
@@ -41,7 +41,7 @@
         </div>
       </div>
       <!--最新文章-->
-      <div class="right_new">
+      <div data-aos="fade-up" class="right_new">
         <div class="calendar_header" style="border-bottom: 1px solid #eee">
           <img src="../assets/img/suggestion.png" alt="">
           <span>最新文章</span>
@@ -75,6 +75,8 @@
 <script>
     import contentRight from '../components/contentRight';
     import { swiper, swiperSlide } from 'vue-awesome-swiper'
+    import 'aos/dist/aos.css'//aos滚动的使用。
+    import Aos from 'aos'
     import 'swiper/dist/css/swiper.css';
     import Vue from 'vue'
     import Calendar from 'vue-calendar-component';
@@ -276,13 +278,15 @@
             }
         },
         mounted() {
+            Aos.init({
+                duration: 1200,
+            })
             this.show = true;
             var that = this;
             window.addEventListener("beforeunload", this.fn);
             window.addEventListener('scroll', this.dataScroll);
             //数字时钟
             var week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-            var timerID = setInterval(updateTime, 1000);
             updateTime();
             function updateTime() {
                 var cd = new Date();
@@ -291,7 +295,11 @@
                 Vue.set(that,"date",zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth()+1, 2) + '-' + zeroPadding(cd.getDate(), 2));
                 Vue.set(that,"time",zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2));
             };
-
+            //定时器的调用及清除
+            const timer  = setInterval(updateTime, 1000);
+            this.$once('hook:beforeDestroy', () => {
+                clearInterval(timer);
+            });
             function zeroPadding(num, digit) {
                 var zero = '';
                 for(var i = 0; i < digit; i++) {

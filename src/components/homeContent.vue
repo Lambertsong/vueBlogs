@@ -38,7 +38,7 @@
             </div>
           </div>
         </div>
-        <div class="content_menu">
+        <div  data-aos="fade-up"class="content_menu">
           <div class="menu_list">
             <div class="menu_img">
               <img src="../assets/img/faimlyalbum.png" alt="">
@@ -100,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="content_user">
+        <div data-aos="fade-up" class="content_user">
           <div class="user_header">
             <div style="color: #FF5E5C;font-weight: 600">活跃用户</div>
             <div>排行</div>
@@ -124,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div class="content_video">
+        <div data-aos="fade-up" class="content_video">
           <!--单独图片大小-->
           <div class="video">
             <img src="../assets/img/video1.jpg" alt="">
@@ -161,17 +161,17 @@
           </div>
         </div>
         <!--公告部分-->
-        <div class="content_announcement">
+        <div data-aos="fade-up" class="content_announcement">
           <div class="text">这个博客是我写这练练手的，以后会持续更新，会慢慢更完善的!</div>
           <div class="resources">本站共分享了 <span style="color: red">100</span> 个资源</div>
         </div>
         <!--广告图片-->
-        <div class="content_advertising">
+        <div data-aos="fade-up" class="content_advertising">
           <img src="../assets/img/advertising.jpg" alt="">
         </div>
         <!--内容部分-->
         <div>
-          <div class="section section_list animated yin" v-for="(item, index) in list" :key="index">
+          <div data-aos="fade-up" class="section section_list animated yin" v-for="(item, index) in list" :key="index" @click="go()">
             <div>
               <img :src="item.img" alt="">
             </div>
@@ -206,7 +206,7 @@
           </div>
         </div>
         <!--分页-->
-        <div class="page">
+        <div data-aos="fade-up" class="page">
           <div class="page_quantity">1</div>
           <div class="next">下一页</div>
           <div class="next">尾页</div>
@@ -215,7 +215,7 @@
       </div>
       <!--广告及个人部分-->
       <div class="content_right">
-        <div class="right_header">
+        <div data-aos="fade-up" class="right_header">
           <div class="user_img">
             <img src="../assets/img/mi.jpg" alt="">
           </div>
@@ -240,7 +240,7 @@
             </div>
           </div>
         </div>
-        <div class="right_calendar">
+        <div data-aos="fade-up" class="right_calendar">
           <div class="calendar_header">
             <img src="../assets/img/calendar.png" alt="">
             <span>日历和时间</span>
@@ -257,7 +257,7 @@
           </div>
         </div>
         <!--标签-->
-        <div class="right_tally">
+        <div data-aos="fade-up" class="right_tally">
           <div class="calendar_header">
             <img src="../assets/img/tally.png" alt="">
             <span>标签</span>
@@ -267,7 +267,7 @@
           </div>
         </div>
         <!--热门文章-->
-        <div class="right_article">
+        <div data-aos="fade-up" class="right_article">
           <div class="calendar_header" style="border-bottom: 1px solid #eee">
             <img src="../assets/img/give.png" alt="">
             <span>热门文章</span>
@@ -280,7 +280,7 @@
           </div>
         </div>
         <!--最新文章-->
-        <div class="right_new">
+        <div data-aos="fade-up" class="right_new">
           <div class="calendar_header" style="border-bottom: 1px solid #eee">
             <img src="../assets/img/suggestion.png" alt="">
             <span>最新文章</span>
@@ -326,6 +326,8 @@
   import 'swiper/dist/css/swiper.css';
   import Vue from 'vue'
   import Calendar from 'vue-calendar-component';
+  import 'aos/dist/aos.css'//aos滚动的使用。
+  import Aos from 'aos'
   export default {
     name: 'homeContent',
     props: {
@@ -527,6 +529,9 @@
       }
     },
     methods: {
+      go(){
+          this.$router.push('/contentsArticle')
+      },
       //触底事件
       created(){
         window.onscroll = function(){
@@ -570,7 +575,7 @@
           // that.scroll //区域的高度
           // sections[i].offsetTop //元素距离顶部的距离
           if (that.scroll + window.innerHeight >= sections[i].offsetTop + hd) {
-            section_list.eq(i).addClass("fadeInUp").removeClass("current");
+            // section_list.eq(i).addClass("fadeInUp").removeClass("current");
             // console.log("我进来了");
             break;
           }
@@ -599,13 +604,15 @@
       }
     },
     mounted() {
+      Aos.init({
+          duration: 1200,
+      })
       // this.show = true
       var that = this;
       window.addEventListener("beforeunload", this.fn);
       window.addEventListener('scroll', this.dataScroll);
       //数字时钟
       var week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-      var timerID = setInterval(updateTime, 1000);
       updateTime();
       function updateTime() {
         var cd = new Date();
@@ -614,7 +621,11 @@
         Vue.set(that,"date",zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth()+1, 2) + '-' + zeroPadding(cd.getDate(), 2));
         Vue.set(that,"time",zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2));
       };
-
+      //定时器的调用及清除
+      const timer  = setInterval(updateTime, 1000);
+      this.$once('hook:beforeDestroy', () => {
+          clearInterval(timer);
+      });
       function zeroPadding(num, digit) {
         var zero = '';
         for(var i = 0; i < digit; i++) {

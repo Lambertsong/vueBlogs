@@ -25,6 +25,15 @@
               </div>
               <div>个人笔记</div>
             </router-link>
+            <div class="options">
+              <div class="icon"></div>
+              <div class="region">
+                VIP专区
+              </div>
+              <div class="region">
+                私密空间
+              </div>
+            </div>
           </li>
           <li>
             <router-link class="li" to="/template">
@@ -41,6 +50,14 @@
               </div>
               <div>更多功能</div>
             </router-link>
+            <div class="options">
+              <div class="region">
+                VIP专区
+              </div>
+              <div class="region">
+                私密空间
+              </div>
+            </div>
           </li>
         </ul>
       </header>
@@ -271,5 +288,47 @@
       border-radius: 50%;
       cursor: pointer;
     }
+  }
+/* 选项*/
+  li{
+    position: relative;
+  }
+  li:hover .options{
+    /*height:auto;*/
+    /*transition: all 0.6s;*/
+    /*overflow: auto;*/
+    opacity: 1;
+  }
+  .options{
+    /*height: 0px;*/
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #eeeeee;
+    /*border: 1px solid #aaaaaa;*/
+    width: 104%;
+    border-radius: 4px;
+    box-shadow: 0 5px 8px #aaaaaa;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+  .region{
+    padding: 10px;
+    /*border-bottom: 1px solid #ffffff;*/
+  }
+  .icon{
+    width: 0;
+    height: 0;
+    border: 10px solid #eeeeee;
+    border-top: none;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    /*绝对位置*/
+    position: absolute;
+    /*将小三角形向下移90个像素*/
+    top: -9px;
+    /*将小三角形向右移10个像素*/
+    left: calc(104%/2 - 15px);
   }
 </style>

@@ -12,7 +12,7 @@
       </div>
       <!--内容部分-->
       <div class="content_vessel">
-        <div class="section section_list animated yin" v-for="(item, index) in list" :key="index">
+        <div data-aos="fade-up" class="section section_list animated yin" v-for="(item, index) in list" :key="index">
           <div>
             <img :src="item.img" alt="" >
           </div>
@@ -47,7 +47,7 @@
         </div>
       </div>
       <!--分页-->
-      <div class="page">
+      <div class="page" data-aos="fade-up">
         <div class="page_quantity">1</div>
         <div class="next">下一页</div>
         <div class="next">尾页</div>
@@ -63,6 +63,8 @@
     import 'swiper/dist/css/swiper.css';
     import Vue from 'vue'
     import Calendar from 'vue-calendar-component';
+    import 'aos/dist/aos.css'//aos滚动的使用。
+    import Aos from 'aos'
     export default {
         name: 'contentLeft',
         props: {
@@ -222,7 +224,7 @@
                     // that.scroll //区域的高度
                     // sections[i].offsetTop //元素距离顶部的距离
                     if (that.scroll + window.innerHeight >= sections[i].offsetTop + hd) {
-                        section_list.eq(i).addClass("fadeInUp").removeClass("current");
+                        // section_list.eq(i).addClass("fadeInUp").removeClass("current");
                         // console.log("我进来了");
                         break;
                     }
@@ -251,6 +253,9 @@
             }
         },
         mounted() {
+            Aos.init({
+                duration: 1200,
+            })
             this.show = true;
             var that = this;
             var vessel = document.getElementsByClassName('content_vessel');
