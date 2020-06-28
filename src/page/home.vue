@@ -25,15 +25,6 @@
               </div>
               <div>个人笔记</div>
             </router-link>
-            <div class="options">
-              <div class="icon"></div>
-              <div class="region">
-                VIP专区
-              </div>
-              <div class="region">
-                私密空间
-              </div>
-            </div>
           </li>
           <li>
             <router-link class="li" to="/template">
@@ -54,7 +45,7 @@
               <div class="region">
                 VIP专区
               </div>
-              <div class="region">
+              <div class="region" @click="intimity()">
                 私密空间
               </div>
             </div>
@@ -78,9 +69,10 @@
         <span  style="background-color: #5d99cd;margin-right: 5px;padding: 3px;color: white">· Theme by 羊羊羊博客</span>
         <span  style="background-color: #5d99cd;margin-right: 5px;padding: 3px;color: white">|  导航地图</span></div>
     </div>
+    <!--弹出自定义-->
+    <div></div>
   </div>
 </template>
-
 <script>
   let topHeader=0;
   import ChoosingCity from '../components/homeContent';
@@ -106,7 +98,6 @@
       },
       watch: {
         scroll: function () {
-          console.log(123132);
           this.loadSroll()
         }
       },
@@ -126,6 +117,18 @@
             topHeader = scrollTop;
             $(".header").slideUp()
           }
+        },
+        intimity:function () {
+            var that = this;
+            layer.prompt({title: '我最爱的人是谁？注意是全拼哦！', formType: 1}, function(pass, index){
+                layer.close(index);
+                if (pass == "zhangxuejie"){
+                    console.log("wojinlaile1");
+                    that.$router.push('/privacySpace')
+                }else {
+                    layer.msg('很遗憾，你并不知道！', {icon: 5});
+                }
+            });
         }
       },
       mounted() {

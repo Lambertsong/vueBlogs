@@ -8,6 +8,8 @@ import 'jquery'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'//这里注意具体看使用的版本是否需要引入样式，以及具体位置。
 import animated from 'animate.css'
+//弹出框
+import layer from "layui-layer";
 // import LetItSnow from 'vue-let-it-snow';
 // Vue.use(LetItSnow);
 Vue.use(animated);
